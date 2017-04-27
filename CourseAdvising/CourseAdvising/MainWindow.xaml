@@ -1,0 +1,38 @@
+﻿<Window x:Class="CourseAdvising.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Course Advising" Height="600" Width="900" Loaded="Window_Loaded">
+    <Grid Background="White">
+        <Menu Height="23" Name="menu1" VerticalAlignment="Top">
+            <MenuItem Header="_Menu">
+                <MenuItem Header="_Add" Click="MenuItem_Click_Add"/>
+                <MenuItem Header="_Drop" Click="MenuItem_Click_Drop"/>
+                <MenuItem Header="_Withdraw" Click="MenuItem_Click_Withdraw" />
+                <MenuItem Header="_Exit" Click="MenuItem_Click_Exit"/>
+            </MenuItem>
+            <MenuItem Header="_View">
+                <MenuItem Header="_Students" Click="MenuItem_Click_ViewStudent" />
+                <MenuItem Header="_Instructors" Click="MenuItem_Click_ViewInstructor" />
+                <MenuItem Header="_Courses" Click="MenuItem_Click_ViewCourse" />
+                <MenuItem Header="_Course Taken" Click="MenuItem_Click_Taken" />
+                <MenuItem Header="_Course Completed" Click="MenuItem_Click_Comp" />
+            </MenuItem>
+            <MenuItem Header="_Edit Info">
+                <MenuItem Header="_Students">
+                    <MenuItem Header="_Add Student" Click="MenuItem_Click_AddStudent" />
+                    <MenuItem Header="_Delete Student" Click="MenuItem_Click_DeleteStudent" />
+                </MenuItem>
+                <MenuItem Header="_Instructors">
+                    <MenuItem Header="_Add Instructor" Click="MenuItem_Click_AddInstructor"  />
+                    <MenuItem Header="_Delete Instructor" Click="MenuItem_Click_DeleteInstructor" />
+                </MenuItem>
+                <MenuItem Header="_Courses">
+                    <MenuItem Header="_Add Course" Click="MenuItem_Click_AddCourse"  />
+                    <MenuItem Header="_Delete Course" Click="MenuItem_Click_DeleteCourse" />
+                </MenuItem>
+            </MenuItem>
+
+        </Menu>
+        <Label Margin="69,250,73,234" Name="label1" FontSize="44" Background="Transparent">Welcome To Course Advising System</Label>
+    </Grid>
+</Window>

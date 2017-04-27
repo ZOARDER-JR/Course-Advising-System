@@ -1,0 +1,11 @@
+﻿<Window x:Class="CourseAdvising.DeleteCourse"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="DeleteCourse" Height="200" Width="300" Background="Aquamarine">
+    <Grid>
+        <Label Height="30" HorizontalAlignment="Left" Margin="12,28,0,0" Name="label1" VerticalAlignment="Top" Width="91">Course ID</Label>
+        <TextBox Height="23" Margin="120,28,12,0" Name="courseID" VerticalAlignment="Top" />
+        <Button HorizontalAlignment="Left" Margin="12,0,0,30" Name="delete" Width="95" Height="35" VerticalAlignment="Bottom" Click="delete_Click">Delete</Button>
+        <Button HorizontalAlignment="Right" Margin="0,0,12,30" Name="cancel" Width="95" Height="35" VerticalAlignment="Bottom" Click="cancel_Click">Cancel</Button>
+    </Grid>
+</Window>

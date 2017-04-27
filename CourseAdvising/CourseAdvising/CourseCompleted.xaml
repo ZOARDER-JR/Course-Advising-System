@@ -1,0 +1,13 @@
+﻿<Window x:Class="CourseAdvising.CourseCompleted"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="CourseCompleted" Height="500" Width="300" xmlns:my="http://schemas.microsoft.com/wpf/2008/toolkit" Loaded="Window_Loaded">
+    <Grid>
+        <my:DataGrid AutoGenerateColumns="False" Margin="21,12,29,12" Name="completedGrid">
+            <my:DataGrid.Columns>
+                <my:DataGridTextColumn Header="Student ID" Binding="{Binding Path=sid}"/>
+                <my:DataGridTextColumn Header="Course ID" Binding="{Binding Path=cid}"/>
+            </my:DataGrid.Columns>
+        </my:DataGrid>
+    </Grid>
+</Window>

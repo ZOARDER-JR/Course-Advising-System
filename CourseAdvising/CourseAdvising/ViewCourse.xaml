@@ -1,0 +1,18 @@
+﻿<Window x:Class="CourseAdvising.ViewCourse"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="View Courses" Height="300" Width="500" xmlns:my="http://schemas.microsoft.com/wpf/2008/toolkit" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="287*" />
+            <ColumnDefinition Width="191*" />
+        </Grid.ColumnDefinitions>
+        <my:DataGrid AutoGenerateColumns="False" Margin="12" Name="courseGrid" Grid.ColumnSpan="2">
+        <my:DataGrid.Columns>
+            <my:DataGridTextColumn Header="Course Code" Binding="{Binding Path=cid}"/>
+            <my:DataGridTextColumn Header="Course Title" Binding="{Binding Path=cname}"/>
+            <my:DataGridTextColumn Header="Credit" Binding="{Binding Path=crdt}"/>
+        </my:DataGrid.Columns>
+        </my:DataGrid>
+    </Grid>
+</Window>

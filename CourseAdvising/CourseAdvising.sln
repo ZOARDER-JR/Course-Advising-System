@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CourseAdvising", "CourseAdvising\CourseAdvising.csproj", "{89B8B4CD-BA88-4A72-9F74-9CE55834B0EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{F15CB6FF-E231-4C7D-A8E0-9DF0B74C57E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89B8B4CD-BA88-4A72-9F74-9CE55834B0EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89B8B4CD-BA88-4A72-9F74-9CE55834B0EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89B8B4CD-BA88-4A72-9F74-9CE55834B0EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89B8B4CD-BA88-4A72-9F74-9CE55834B0EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F15CB6FF-E231-4C7D-A8E0-9DF0B74C57E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F15CB6FF-E231-4C7D-A8E0-9DF0B74C57E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F15CB6FF-E231-4C7D-A8E0-9DF0B74C57E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F15CB6FF-E231-4C7D-A8E0-9DF0B74C57E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

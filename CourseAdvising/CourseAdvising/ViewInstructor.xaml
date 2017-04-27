@@ -1,0 +1,15 @@
+﻿<Window x:Class="CourseAdvising.ViewInstructor"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="View Instructors" Height="300" Width="500" xmlns:my="http://schemas.microsoft.com/wpf/2008/toolkit" Loaded="Window_Loaded">
+    <Grid>
+        <my:DataGrid AutoGenerateColumns="False" Margin="12" Name="instructorGrid">
+            <my:DataGrid.Columns>
+                <my:DataGridTextColumn Header="Instructor ID" Binding="{Binding Path=insid}"/>
+                <my:DataGridTextColumn Header="First Name" Binding="{Binding Path=ifname}"/>
+                <my:DataGridTextColumn Header="Last Name" Binding="{Binding Path=ilname}"/>
+                <my:DataGridTextColumn Header="Room Number" Binding="{Binding Path=iroom}"/>
+            </my:DataGrid.Columns>
+        </my:DataGrid>
+    </Grid>
+</Window>

@@ -1,0 +1,17 @@
+﻿<Window x:Class="CourseAdvising.AddInstructor"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="AddInstructor" Height="300" Width="500">
+    <Grid Background="Aquamarine">
+        <Label Height="30" HorizontalAlignment="Left" Margin="43,22,0,0" Name="label1" VerticalAlignment="Top" Width="91">Instructor ID</Label>
+        <Label Height="30" HorizontalAlignment="Left" Margin="43,58,0,0" Name="label2" VerticalAlignment="Top" Width="91">First Name</Label>
+        <Label HorizontalAlignment="Left" Margin="43,94,0,0" Name="label3" Width="91" Height="30" VerticalAlignment="Top">Lase Name</Label>
+        <Label HorizontalAlignment="Left" Margin="43,130,0,107" Name="label4" Width="91">Room No</Label>
+        <TextBox Height="23" Margin="224,22,43,0" Name="instructorID" VerticalAlignment="Top" />
+        <TextBox Height="23" Margin="224,58,43,0" Name="firstName" VerticalAlignment="Top" />
+        <TextBox Height="23" Margin="224,94,43,0" Name="lastName" VerticalAlignment="Top" />
+        <TextBox HorizontalAlignment="Right" Margin="0,0,43,107" Name="roomNo" Width="58" Height="23" VerticalAlignment="Bottom" />
+        <Button Height="35" HorizontalAlignment="Left" Margin="43,0,0,27" Name="add" VerticalAlignment="Bottom" Width="95" Click="add_Click">Add</Button>
+        <Button Height="35" HorizontalAlignment="Right" Margin="0,0,43,27" Name="cancel" VerticalAlignment="Bottom" Width="95" Click="cancel_Click">Cancel</Button>
+    </Grid>
+</Window>

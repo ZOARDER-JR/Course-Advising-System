@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="University" Class="UniversityDataDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=LOOBYARUP-PC\SQLEXPRESS;Initial Catalog=University;Integrated Security=True" SettingsObjectName="Business.Properties.Settings" SettingsPropertyName="UniversityConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.C_completed" Member="C_completeds">
+    <Type Name="C_completed">
+      <Column Name="sid" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="cid" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.C_taken" Member="C_takens">
+    <Type Name="C_taken">
+      <Column Name="sid" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="cid" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Course" Member="Courses">
+    <Type Name="Course">
+      <Column Name="cid" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="cname" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="crdt" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Instructor" Member="Instructors">
+    <Type Name="Instructor">
+      <Column Name="insid" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ifname" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ilname" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="iroom" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Instructor_Student" Member="Students" ThisKey="insid" OtherKey="insid" Type="Student" />
+    </Type>
+  </Table>
+  <Table Name="dbo.P_req" Member="P_reqs">
+    <Type Name="P_req">
+      <Column Name="cid" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="pid" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Student" Member="Students">
+    <Type Name="Student">
+      <Column Name="sid" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="insid" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="sfname" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="slname" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ccomp" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="cgpa" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="Instructor_Student" Member="Instructor" ThisKey="insid" OtherKey="insid" Type="Instructor" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

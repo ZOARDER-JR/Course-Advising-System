@@ -1,0 +1,16 @@
+﻿<Window x:Class="CourseAdvising.Students"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="View Students" Height="300" Width="500" xmlns:my="http://schemas.microsoft.com/wpf/2008/toolkit" Loaded="Window_Loaded">
+    <Grid>
+        <my:DataGrid AutoGenerateColumns="False" Margin="12,12,12,20" Name="studentGrid">
+            <my:DataGrid.Columns>
+                <my:DataGridTextColumn Header="Student ID" Binding="{Binding Path=sid}"/>
+                <my:DataGridTextColumn Header="First Name" Binding="{Binding Path=sfname}"/>
+                <my:DataGridTextColumn Header="Credit Earned" Binding="{Binding Path=ccomp}"/>
+                <my:DataGridTextColumn Header="CGPA" Binding="{Binding Path=cgpa}"/>
+                <my:DataGridTextColumn Header="Advisor ID" Binding="{Binding Path=insid}"/>
+            </my:DataGrid.Columns>
+        </my:DataGrid>
+    </Grid>
+</Window>
